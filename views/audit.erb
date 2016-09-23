@@ -1,0 +1,119 @@
+		<div id="header-half">
+			  <div class="dropdown">
+			    <label>Vendor:</label>
+          <%= @audit.vendor %>
+				</div>
+
+			  <div class="dropdown">
+			    <label>Community:</label>
+					<%= @audit.community %>
+			  </div>
+
+		    <div class="dropdown">
+			    <label>Lot #:</label>
+					<%= @audit.lot %>
+			  </div>
+
+			  <div class="dropdown">
+			    <label>Task:</label>
+					<%= @audit.task %>
+			  </div>
+ 		 </div>
+
+			<div id="header-half">  
+			  <div class="dropdown">
+			    <label>Builder:</label>
+		  		<%= @audit.builder %>
+			  </div>
+
+			  <div class="dropdown">
+			    <label>Date:</label>
+				  <%= @audit.posted.in_time_zone("America/Chicago").strftime("%A, %b %-d, %Y") %>
+			  </div>
+				 
+				<div class="dropdown">
+				  <label>Time:</label>
+					<%= @audit.posted.in_time_zone("America/Chicago").strftime("%l:%M %p") %>
+				</div>
+			</div>
+
+      <div id="clear"></div>
+
+      <div id="header-half">
+        <div class="dropdown">
+          <label>Hard5 Start:</label>
+          <%= @audit.revised_start.strftime("%b %-d, %Y") if !@audit.revised_start.nil? %>
+        </div>
+
+        <div id="clear"></div>
+
+        <div class="dropdown">
+          <label>Hard5 End:</label>
+          <%= @audit.revised_end.strftime("%b %-d, %Y") if !@audit.revised_end.nil? %>
+        </div>
+      </div>
+
+      <div id="header-half">
+        <div class="dropdown">
+          <label>Actual Start:</label>
+          <%= @audit.actual_start.strftime("%b %-d, %Y") if !@audit.actual_start.nil? %>
+        </div>
+
+        <div id="clear"></div>
+
+        <div class="dropdown">
+          <label>Actual End:</label>
+          <%= @audit.actual_end.strftime("%b %-d, %Y") if !@audit.actual_end.nil? %>
+        </div>
+      </div>
+
+			<hr />
+
+		  <div id="clear"></div>
+
+	    <div id="quick-questions">
+			  <div id="question">		 
+				  <div class="dropdown">
+				    <label>Task Completed per Hard5?</label>
+						<p><%= @audit.completed.empty? ? "Skipped" : @audit.completed %></p>
+				  </div>
+			  </div>
+			  
+			  <div id="question">
+				  <div class="dropdown">
+				    <label>House Clean?</label>
+						<p><%= @audit.clean.empty? ? "Skipped" : @audit.clean %></p>
+				  </div>
+			  </div>
+			  
+			  <div id="question">
+				  <div class="dropdown">
+				    <label>QA Received?</label>
+						<p><%= @audit.quality.empty? ? "Skipped" : @audit.quality %></p>
+				  </div>
+			  </div>
+			  
+			  <div id="question">
+				  <div class="dropdown">
+				    <label>Vendor Started Task?</label>
+						<p><%= @audit.started.empty? ? "Skipped" : @audit.started %></p>
+				  </div>
+			  </div>
+
+		    <div id="clear"></div>
+	    </div>
+
+	    <hr />
+
+      <% @audit.images.each do |i| %>
+        <div class="audit-image">
+          <img src="<%= i.file %>" />
+        </div>
+      <% end %>
+      <div id="clear"></div>
+
+      <p>&nbsp;</p>
+      <form action="/<%= @audit.id %>/email" method="post">
+      <div id="submit-button">
+	      <input type="submit" value="Email" class="post-button">
+	    </div>

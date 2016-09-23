@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Signature Homes</title>
+  	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script>
+      $(function() {
+        $( "#datepicker" ).datepicker();
+      });
+    </script>
+    <script>
+      $(function() {
+        $( "#datepicker2" ).datepicker();
+      });
+    </script>
+    <script>
+      $(function() {
+        $( "#datepicker3" ).datepicker();
+      });
+    </script>
+    <script>
+      $(function() {
+        $( "#datepicker4" ).datepicker();
+      });
+    </script>        
+  </head>
+  <body>
+  <div id="content">
+    <div id="navigation">
+      <a href="/">New Audit</a> |
+      <a href="/audits">Previous Audits</a>
+    </div>
+    <div id="clear"></div>
+
+    <center>
+	    <img src="Sighomes-Logo-350.jpg" alt="Signature Homes logo" />
+	    <br />
+	    <h1>Field Audit</h1>
+	  </center>
+
+    <%= yield %>
+    
+    <div id="clear"></div>
+  </div>
+  <div id="copyright">&copy; 2015 NSH Corp dba Signature Homes</div>
+  </body>
+</html>

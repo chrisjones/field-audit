@@ -1,0 +1,35 @@
+<div id="results-container">
+  <p style="color:green;"><%= flash[:notice] %></p>
+
+	<p><i><%= @audits.count %> Audits completed in system.</i></p>
+
+	<table>
+	  <tr>
+	    <th>Community</th>
+	    <th>Lot</th>
+	    <th>Builder</th>
+	    <th>Vendor</th>
+	    <th>Task</th>
+	    <th>Posted</th>
+	    <th>Actions</th>
+	  </tr>
+	  <% @audits.each do |a| %>
+	    <tr>
+	      <td><%= a.community %></td>
+	      <td><%= a.lot %></td>
+	      <td><%= a.builder %></td>
+	      <td><%= a.vendor %></td>
+	      <td><%= a.task %></td>
+	      <td><%= a.posted.in_time_zone("America/Chicago").strftime("%b %-d, %Y") %></td>
+	      <td>
+          <a href="/<%= a.id %>">View</a> |
+          <!-- Edit |  
+          <a href="/<%= a.id %>/delete" data-confirm="Are you sure?" method="_delete" rel="nofollow">Delete</a> |  -->
+          <form action="/<%= a.id %>/delete" method="POST">
+            <input type="submit" name="commit" value="Delete">
+          </form>
+	      </td>
+	    </tr>
+	  <% end %>
+	</table>  
+</div>

@@ -1,0 +1,49 @@
+<div id="results-container">
+  <p style="color:green;"><%= flash[:notice] %></p>
+
+  <div id="frequency-chart" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="/js/highcharts.js"></script>
+<script src="/js/technical-indicators.src.js"></script>
+<script type="text/javascript">
+  $(function () {
+    $('#frequency-chart').highcharts({
+        chart: { type: 'spline' },
+        title: {
+            text: 'Frequency',
+            x: -20 //center
+        },
+        xAxis: {
+            categories: <%= @days.inspect %>
+        },
+        yAxis: {
+            title: {
+                text: '# Completed'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valueSuffix: ''
+        },
+        series: [{
+        	  name: 'Audits',
+        	  type: 'line',
+        	  id: 'primary',
+            data: <%= @count.inspect %>
+        }, {
+            name: 'Linear Trendline',
+            linkedTo: 'primary',
+            showInLegend: true,
+            enableMouseTracking: false,
+            type: 'trendline',
+            algorithm: 'linear'
+        }]
+    });
+  });
+</script>

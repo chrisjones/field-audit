@@ -1,0 +1,165 @@
+    <form action="/" enctype="multipart/form-data" method="post">
+
+			<div id="header-half">
+			  <div class="dropdown">
+			    <label>Vendor:</label>
+				  <select id="vendor" name="vendor">
+				    <option value="">Select</option>
+              <% SUPPLIERS.each do |vendor| %>
+                <option value="<%= vendor %>"><%= vendor %></option>
+              <% end %>
+				  </select>
+			  </div>
+
+			  <div class="dropdown">
+			    <label>Community:</label>
+					<select id="community" name="community">
+					  <option value="">Select</option>
+					  <% COMMUNITIES.each do |community| %>
+					    <option value="<%= community %>"><%= community %></option>
+					  <% end %>
+					</select>
+			  </div>
+
+		    <div class="dropdown">
+			    <label>Lot #:</label>
+					<select id="lot" name="lot">
+					  <option value="">Select</option>
+					  <% LOTS.each do |lot| %>
+					    <option value="<%= lot %>"><%= lot %></option>
+            <% end %>
+					</select>
+			  </div>
+
+        <div class="dropdown">
+			    <label>Task:</label>
+					<select id="task" name="task">
+					  <option value="">Select</option>
+					  <% TASK_CODES.each do |task_code| %>
+					    <option value="<%= task_code %>"><%= task_code %></option>
+            <% end %>
+					</select>
+			  </div>
+			</div>
+
+			<div id="header-half">  
+			  <div class="dropdown">
+			    <label>Builder:</label>
+		  		<select id="builder" name="builder">
+			  	  <option value="">Select</option>
+			  	  <% BUILDERS.each do |builder| %>
+				      <option value="<%= builder %>"><%= builder %></option>
+            <% end %>
+				  </select>
+			  </div>
+
+			  <div class="dropdown">
+			    <label>Date:</label>
+				  <%= @posted.strftime("%A, %b %-d, %Y") %>
+			  </div>
+				 
+				<div class="dropdown">
+				  <label>Time:</label>
+					<%= @posted.strftime("%l:%M %p") %>
+				</div>
+
+				<input type="hidden" name="posted" value="<%= @posted %>">
+			</div>
+
+      <div id="clear"></div>
+
+      <div id="header-half">
+        <div class="dropdown">
+          <label>Hard5 Start:</label>
+          <input type="text" id="datepicker" name="rev_start" />
+        </div>
+
+        <div class="dropdown">
+          <label>Hard5 End:</label>
+          <input type="text" id="datepicker2" name="rev_end" />
+        </div>
+      </div>
+
+      <div id="header-half">
+				<div class="dropdown">
+				  <label>Actual Start:</label>
+          <input type="text" id="datepicker3" name="act_start" />
+        </div>
+
+				<div class="dropdown">
+				  <label>Actual End:</label>
+          <input type="text" id="datepicker4" name="act_end" />
+        </div>
+      </div>
+
+			<hr />
+
+		  <div id="clear"></div>
+
+	    <div id="quick-questions">
+			  <div id="question">		 
+				  <div class="dropdown">
+				    <label>Task Completed per Hard5?</label>
+						<select id="ontime" name="ontime">
+						  <option value="">Select</option>
+						  <option value="Yes">Yes</option>
+						  <option value="No">No</option>
+						</select>
+				  </div>
+			  </div>
+			  
+			  <div id="question">
+				  <div class="dropdown">
+				    <label>House Clean?</label>
+						<select id="clean" name="clean">
+						  <option value="">Select</option>
+						  <option value="Yes">Yes</option>
+						  <option value="No">No</option>
+						</select>
+				  </div>
+			  </div>
+			  
+			  <div id="question">
+				  <div class="dropdown">
+				    <label>QA Received?</label>
+						<select id="quality" name="quality">
+						  <option value="">Select</option>
+						  <option value="Yes">Yes</option>
+						  <option value="No">No</option>
+						</select>
+				  </div>
+			  </div>
+			  
+			  <div id="question">
+				  <div class="dropdown">
+				    <label>Vendor Started Task?</label>
+						<select id="started" name="started">
+						  <option value="">Select</option>
+						  <option value="Yes">Yes</option>
+						  <option value="No">No</option>
+						</select>
+				  </div>
+			  </div>
+		    <div id="clear"></div>
+	    </div>
+
+	    <hr />
+	    
+      <div id="file-upload">
+        <label class="myLabel">
+          <input type="file" name="images[]" multiple /> 
+        </label>
+	    </div>
+	    <div id="clear"></div>
+
+      <div id="note">
+        <label>Leave a note:</label><br />
+        <textarea id="note" name="note">
+        </textarea>
+      </div>
+      <div id="clear"></div>
+
+      <div id="submit-button">
+	      <input type="submit" value="Post Audit" class="post-button">
+	    </div>
+    </form>

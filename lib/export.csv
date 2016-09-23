@@ -1,0 +1,57 @@
+Supplier,Community,Lot,Task,Builder,Posted On,House Ready for Task?,Task Completed on Time,House Clean?,Quality,Vendor Started Task?
+"Grayton Products, LLC",Magnolia,0014,Install All Ceramic Tile,Denson Dean,"Oct 5, 2015",No,,Yes,,Ontime
+"Mario Vera",Magnolia,0020,Hang Sheetrock,Brian Henderson,"Oct 5, 2015",Yes,Yes,Yes,Acceptable,Early
+"Synergy Stone, Inc.",Lake Cyrus,0125,Install Counter Tops,Sam Russell,"Oct 7, 2015",Yes,Yes,Yes,Acceptable,Not Started
+"McCain Carpet & Flooring, Inc.",Lake Cyrus,0125,Install Tile Backsplash,Sam Russell,"Oct 7, 2015",Yes,,Yes,,Not Started
+"Synergy Stone, Inc.",Lake Cyrus,0130,Install Counter Tops,Brian Shirley,"Oct 7, 2015",,,Yes,,
+"Parker & Sons Heating and Cooling, Inc.",Lake Cyrus,0128,HVAC Trim - SetOut,Bryan Shirley,"Oct 7, 2015",Yes,Yes,Yes,Acceptable,Ontime
+"Buck Creek Concrete, LLC",Lake Cyrus,0128,,Bryan Shirley,"Oct 7, 2015",Yes,Yes,Yes,,Ontime
+"Buck Creek Concrete, LLC",Hamptons,0111,Pour Drive and Walks,Terry Franklin,"Oct 8, 2015",Yes,,Yes,,
+"Buck Creek Concrete, LLC",Hamptons,0115,Pour Drive and Walks,Terry Franklin,"Oct 8, 2015",Yes,,Yes,,
+"84 Lumber",Hamptons,0118,,Terry Franklin,"Oct 12, 2015",Yes,,Yes,,
+"Mario Vera",Hamptons,0137,Finish Sheetrock,Bill Cleckley,"Oct 12, 2015",Yes,,No,,
+"Mario Vera",Hamptons,0129,Interior Paint Two Coats,Daniel Hill,"Oct 12, 2015",Yes,,Yes,,
+"Synergy Stone, Inc.",Hamptons,0133,Install Counter Tops,Bill Cleckley,"Oct 12, 2015",,,Yes,,
+"Buck Creek Concrete, LLC",Hamptons,0135,Pour Drive and Walks,Bill Cleckley,"Oct 12, 2015",Yes,,Yes,,
+"",Hamptons,0135,,Bill Cleckley,"Oct 12, 2015",,,Yes,,
+"",Hamptons,0100,,Terry Franklin,"Oct 12, 2015",Yes,,Yes,,
+"Landscape Services, LLC",Hamptons,0100,Landscaping,Terry Franklin,"Oct 12, 2015",Yes,,Yes,,
+"84 Lumber",Kirkman,0038,,Wayne Black,"Oct 13, 2015",Yes,,Yes,,
+"Mario Vera",Kirkman,0040,Hang Sheetrock,Wayne Black,"Oct 13, 2015",Yes,,,,
+"Mario Vera",Kirkman,0067,Exterior Paint Prime/ 1st Coat,Wayne Black,"Oct 13, 2015",Yes,,Yes,,
+"Kitchen Distributors, Inc.",Hamptons,0129,Install Cabinets,Daniel Hill,"Oct 13, 2015",Yes,,Yes,,
+"Masco Contractor Services Central,Inc.",Hamptons,0105,,Adam Goodwin,"Oct 13, 2015",,,Yes,,
+"Synergy Stone, Inc.",Hamptons,0133,Install Counter Tops,Bill Cleckley,"Oct 13, 2015",,,Yes,Acceptable,
+"Wayne Brantley Electric Co., Inc.",,0170,,Bill Cleckley,"Oct 13, 2015",Yes,,Yes,,
+"84 Lumber",Lake Cyrus,0131,,Sam Russell,"Oct 13, 2015",Yes,,Yes,,
+"84 Lumber",Lake Cyrus,0133,,Bryan Shirley,"Oct 13, 2015",,,Yes,,
+"M & B Plumbing",Lake Cyrus,0133,,Bryan Shirley,"Oct 13, 2015",,,Yes,,
+"Mario Vera",Stockton,0137,Install Brick,Jody Bowlin,"Oct 19, 2015",Yes,No,Yes,,Yes
+"ProBuild Company, LLC",Stockton,0137,,Jody Bowlin,"Oct 19, 2015",Yes,,Yes,,Yes
+"Slabs & Drives, LLC",Stockton,0159,Pour Drive and Walks,Jody Bowlin,"Oct 19, 2015",Yes,Yes,Yes,Acceptable,Yes
+"Surface One, Inc.",Stockton,0158,,Jody Bowlin,"Oct 19, 2015",Yes,Yes,Yes,,Yes
+"Surface One, Inc.",Stockton,0158,,Jody Bowlin,"Oct 19, 2015",Yes,Yes,Yes,,Yes
+"Daniel Allen English",Kirkman,0070,Install Batt Insulation,Wayne Black,"Oct 20, 2015",Yes,,Yes,,Yes
+"Favela Construction",Kirkman,0070,Install Brick,Wayne Black,"Oct 20, 2015",Yes,,Yes,,Yes
+"Blackman Plumbing LLC",Kirkman,0202,Sprinklers for All or Part Yard,Wayne Black,"Oct 20, 2015",Yes,No,Yes,Acceptable,Yes
+"84 Lumber",Kirkman,0208,Install Doors & Windows,Wayne Black,"Oct 20, 2015",Yes,,Yes,,Yes
+"84 Lumber",Kirkman,0205,Install Doors, Trim, and Shutters,Wayne Black,"Oct 20, 2015",Yes,No,Yes,,Yes
+"The Mantel Shoppe LLC",Kirkman,0205,Install Mantle,Wayne Black,"Oct 20, 2015",Yes,Yes,No,Acceptable,Yes
+"",Hamptons,0102,Hang Sheetrock,Daniel Hill,"Oct 26, 2015",Yes,,No,Not Acceptable,Yes
+"Acme Brick/Jenkins Brick Company",Hamptons,0102,Deliver Brick,Daniel Hill,"Oct 26, 2015",Yes,,,,
+"84 Lumber",Hamptons,0141,Install Doors, Trim, and Shutters,Adam Goodwin,"Nov 17, 2015",,,Yes,Acceptable,
+"AV Pro Communications, LLC",Hamptons,0107,Phone and Cable Rough,,"Nov 17, 2015",,,Yes,Acceptable,
+"M & B Plumbing",Hamptons,0102,Plumbing Trim - SetOut,Daniel Hill,"Nov 24, 2015",,,No,Not Acceptable,Yes
+"Parker & Sons Heating and Cooling, Inc.",Hamptons,0102,HVAC Trim - SetOut,Daniel Hill,"Nov 24, 2015",,,Yes,,No
+"Wayne Brantley Electric Co., Inc.",Hamptons,0102,Electrical Trim - SetOut,Daniel Hill,"Nov 24, 2015",,,Yes,,No
+"Mario Vera",Hamptons,0109,Paint Interior Final,Bill Cleckley,"Nov 24, 2015",,,Yes,,No
+"Landscape Workshop, LLC",Hamptons,0109,Landscaping,Bill Cleckley,"Nov 24, 2015",,,Yes,,Yes
+"Specified Design, LLC",Magnolia,0010,Install All Ceramic Tile,,"Nov 24, 2015",Yes,,No,Acceptable,Yes
+"Specified Design, LLC",Magnolia,0010,Install All Ceramic Tile,Greg Byrd,"Nov 24, 2015",Yes,,No,Acceptable,Yes
+"Favela Construction",Magnolia,0012,Install Brick,Denson Dean,"Nov 24, 2015",,,Yes,Acceptable,Yes
+"The Mantel Shoppe LLC",Magnolia,0012,Install Mantle,Denson Dean,"Nov 24, 2015",Yes,,Yes,Acceptable,Yes
+"Mario Vera",Magnolia,0012,Interior Paint Two Coats,Denson Dean,"Nov 24, 2015",Yes,,Yes,,No
+"Mario Vera",Stockton,0177,Finish Sheetrock,Jody Bowlin,"Nov 25, 2015",Yes,,Yes,,Yes
+"Mario Vera",Stockton,0177,Hang Sheetrock,Jody Bowlin,"Nov 25, 2015",Yes,Yes,No,Not Acceptable,Yes
+"Mario Vera",Stockton,0177,Hang Sheetrock,Jody Bowlin,"Nov 25, 2015",Yes,,No,Not Acceptable,
+"Stephen Fambrough",Stockton,0150,Install Carpet,Jody Bowlin,"Nov 25, 2015",Yes,,Yes,,No
